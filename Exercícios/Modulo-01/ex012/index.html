@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video controls width="500" poster="imagens/onda.png">
+        <source src="videos/meu-video-mp4.mp4" type="video/mp4">
+        <source src="videos/meu-video-mkv.mkv" type="video/mp4">
+        <source src="videos/Meu-Video-Webm.webm" type="video/webm">
+        <source src="videos/meu-video-ogv.ogv" type="video/ogv">
+    </video>
+
+    <video controls width="500" poster="imagens/estrada.png">
+        <source src="videos/pexels-addie-su-19655535 (Original).mp4" type="video/mp4">
+    </video><br>
+
+    <video controls width="500" poster="imagens/cristalina.png">
+        <source src="videos/pexels-rene-strgar-19040657 (Original).mp4" type="video/mp4">
+    </video>
+
+    <video controls width="500" poster="imagens/limoes-capa.png">
+        <source src="videos/Rene.mkv" type="video/mp4">
+    </video>
+
+    <p>
+        Seu navegador não dá suporte a reprodução dos formatos MP4, MKV, WEBM e OGV.
+        <a href="videos/meu-video-mp4.mp4" download="videos/meu-video-mp4.mp4" type="video/mp4"><br>
+            Clique aqui para fazer o download do vídeo.
+        </a>
+    </p>
+
+    <h1>inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t3WZIL_VwYg?si=fUWSwqnalOQjQoC_&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/36548830?h=e1e4ac1bfd" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
