@@ -11,8 +11,15 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table {
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
         }
 
@@ -37,12 +44,13 @@
 
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Uso de tabelas grandes</h1>
     <h2>Anatomia de tabelas grandes</h2>
     
     <!--
         ANATOMIA DE TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -52,11 +60,13 @@
     -->
 
     <table>
+        <caption>População das Unidades federativas</caption>
+
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 70px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 110px;">População</th>
             </tr>
         </thead>
 
