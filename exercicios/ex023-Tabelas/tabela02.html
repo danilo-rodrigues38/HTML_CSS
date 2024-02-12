@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Tabelas</title>
+    <title>Alinhamento nas Tabelas</title>
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,26 +12,21 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /* collapse -> justa as células da tabela , separate -> mantem um espaço entre as células da tabela */
-            border: 5px solid gray;
-        }
-
-        tr.linha {
-            background-color: lightgray;
         }
 
         td {
             padding: 10px;
             border: 1px solid black;
-        }
-
-        td.dado {
-            background-color: lightyellow;
+            text-align: center; /* Alinhamento horizontal - left, center ou right */
+            vertical-align: middle; /* Alinhamento vertical - top, middle ou bottom*/
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
+    <h2>Alinhamento nas tabelas</h2>
     
     <!--
         HIERAQUIA DE TABELAS (Simples)
@@ -49,7 +44,7 @@
             <td>D1</td> <!-- quarta coluna. -->
         </tr>
 
-        <tr class="linha"> <!-- segunda linha. -->
+        <tr> <!-- segunda linha. -->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -66,7 +61,7 @@
         <tr> <!-- quarta linha. -->
             <td>A4</td>
             <td>B4</td>
-            <td class="dado">D4</td>
+            <td>D4</td>
             <td>D4</td>
         </tr>
     </table>
