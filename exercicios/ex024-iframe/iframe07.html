@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium suscipit quas id eveniet consequatur quaerat numquam sint, vero fuga consectetur tempore similique illo repellat, voluptate praesentium sit aliquam veritatis possimus!</p>
+    <!--
+        PROTEÇÃO DO IFRAME 
+
+        referrerpolicy="no-referrer"    => Não permite que o conteúdo que está dentro do iframe colete informações dos usuários.
+
+        sandbox ->  "sandbox"           => Nada é permitido.
+                    "allow-same-origin" => Somente é permitido da mesma origem, ou seja, do seu próprio site.
+                    "allow-forms"       => Permite formulários.
+                    "allow-scripts"     => Permite scripts, pois todo html tem scripts.
+     -->
+    <iframe src="pages/página004.html" frameborder="1" width="350" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>Seu navegador nã é compativel com esse conteudo.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eum sapiente in iste illum voluptate mollitia placeat rem hic ex omnis maiores commodi exercitationem alias iure doloremque dolores, aliquid nemo?</p>
+</body>
+</html>
