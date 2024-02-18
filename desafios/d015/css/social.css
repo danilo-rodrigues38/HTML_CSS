@@ -23,6 +23,7 @@ a{
     font-weight: bolder;
     text-align: center;
     text-decoration: none;
+	margin-top: -4px;
 }
 
 a:hover{
