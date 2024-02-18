@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Fomulários</h1>
+
+    <!-- autocomplete = no form tem a função de ligar ou desligar o preenchimento automatico dos formulários. -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusuario">Usuário:</label>
+            <!--
+                required     = campo exigido
+                minlength    = mínimo de caracteres
+                maxlength    = máximo de caracteres
+                size         = tamanho da caixa do formulário
+                placeholdes  = texto exibido dentro da caixa do formulário
+                autocomplete = no input, informa ao navegador o tipo de dados do campo, neste caso o nome do usuário.
+            -->
+            <input type="text" name="usuario" id="iusuario" required minlength="3" maxlength="50" size="25" placeholder="Entre 3 e 50 caracteres" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+
+            <!-- autocomplete = neste caso, informa ao navegador que os dados são da senha, caso tenha a senha armazenada,
+                ele irá sugerir a sinha armazenada na memória.
+            -->
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="25" placeholder="Entre 8 e 16 caracteres" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
