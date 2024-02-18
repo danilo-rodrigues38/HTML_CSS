@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Telefones e e-mails</title>
+</head>
+<body>
+    <h1>Testes com formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="3" maxlength="50" placeholder="Nome completo" size="22" style="margin-left: 16px;">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="seuemail@suaoperadora.com" size="22" style="margin-left: 12px;">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <!--
+                    pattern = expressão regular para o telefone.
+                    Estudar mais sobre REgEx - expressão regular.
+                -->
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" placeholder="formato (11)99999-8888" size="22" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
