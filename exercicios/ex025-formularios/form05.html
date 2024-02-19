@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox e Radio</title>
+</head>
+<body>
+    <h1>Formulários com CheckBox e Radio</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--
+                Para o type radio, se os parâmetros name forem diferentes, o html entende que são assuntos diferente e é possível selecionar varios,
+                para poder selecionar apenas um item, os parametros name tem que ser iguais (para o mesmo grupo), os id podem ser diferentes para
+                identificar o nome do parametro.
+            -->
+            <input type="radio" name="sexo" id="imaculino" value="M"> <label for="imaculino">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifeminino" checked value="F"> <label for="ifeminino">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label> <br>
+            <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">futebol</label> <br>
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
