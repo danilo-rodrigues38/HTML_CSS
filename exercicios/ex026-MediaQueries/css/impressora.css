@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Estilos para a impressora */
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: rgb(158, 158, 158);
+}
+
+header > h1{
+    text-align: center;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
+article > h2{
+    text-align: center;
+    padding: 20px;
+}
+
+article > p{
+    text-indent: 100px;
+    padding-top: 15px;
+    line-height: 1.5em;
+    text-align: justify;
+}
