@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Color, Range e File</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Cor:</label>
+            <!-- value = define a cor padrão, neste caso, o verde. -->
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="irange">Range:</label>
+            <!--O min e o max, pode ser escolhido qualquer valor:
+                Ex: 1 a 5, 1 a 10, qualquer valor.
+                Value = especifica o valor padrão inicial
+            -->
+            <input type="range" name="range" id="irange" min="0" max="100" value="100">
+        </p>
+        <p>
+            <label for="ifile">File:</label>
+            <!--
+                Para envio de arquivos, não se deve usar o método GET, pois pelo GET os dados são enviados no cabeçalho do navegador,
+                para este caso, usamos o método POST.
+            -->
+            <input type="file" name="file" id="ifile">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
